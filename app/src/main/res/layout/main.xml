@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FAFAFA">
+
+    <!-- ברכה ומספר שולחן -->
+    <TextView
+        android:id="@+id/tvWelcomeGuest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="שלום אורח!"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#222222"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvTableInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="הושבת בשולחן מספר 12 באולם &quot;ימה&quot;"
+        android:textSize="17sp"
+        android:textColor="#1B5E20"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="18dp" />
+
+    <!-- 3 הכפתורים הראשיים -->
+    <Button
+        android:id="@+id/btnMenuYamma"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="תפריט &quot;ימה&quot;"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="14dp">
+
+        <Button
+            android:id="@+id/btnSchedule"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="לו&quot;ז"
+            android:textSize="15sp"
+            android:layout_marginEnd="6dp" />
+
+        <Button
+            android:id="@+id/btnRateEvent"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="דירוג האירוע ★"
+            android:textSize="15sp"
+            android:layout_marginStart="6dp" />
+    </LinearLayout>
+
+    <!-- אזור התפריט: נפתח רק בלחיצה על כפתור תפריט "ימה" -->
+    <LinearLayout
+        android:id="@+id/llMenuSection"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- 3 כפתורי קטגוריות התפריט -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/btnReception"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="עמדות"
+                android:textSize="13sp"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/btnChef"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="מנות שף"
+                android:textSize="13sp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/btnMainDish"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="מנות עיקריות"
+                android:textSize="13sp"
+                android:layout_marginStart="4dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCurrentCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="תפריט &quot;ימה&quot; - עמדות קבלת פנים"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMenu"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

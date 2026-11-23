@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "148461631343",
+    "firebase_url": "https://weddingapp-e7547-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "weddingapp-e7547",
+    "storage_bucket": "weddingapp-e7547.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148461631343:android:5da605ea4d69cf9e441a9a",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEiGv9_8eFeUu00YCp-KgAYkhAvHZ_wLM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
